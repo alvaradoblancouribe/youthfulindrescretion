@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type='text/javascript' src='../js/api.js'></script>
+<script type='text/javascript' src='../js/adminVideoSegments.js'></script>
+<script type='text/javascript' src='../js/adminSites.js'></script>
+<script type='text/javascript' src='../js/registerSite.js'></script>
+<link rel="stylesheet" type="text/css" href="adminstyle.css" />
+<title>Administrator View</title>
+</head>
+
+<body onload="initialize()">
+	<h1>PLAYLIST APP ADMINISTRATOR</h1>
+
+	<div class="row">
+		<div class="column left">
+			<h2>Local Video Segments</h2>
+			<div id="VideoSegments"></div>
+
+
+		</div>
+		<div class="column right">
+			<h2>Registered Remote Sites</h2>
+			<form name="registerForm" method="post">
+   				<input name="url" value="" type="text" size="50" placeholder="Enter the URL"/>
+   				<input type="button" id="registerButton" value="Register Site" onClick="JavaScript:handleCreateClick(this)">
+			</form>
+
+			<!-- List of registered remote sites -->
+			<div id="unorderedSites"></div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function initialize() {
+			refreshVideoSegments();
+			refreshSites();
+		}
+	</script>
+
+</body>
+
+</html>

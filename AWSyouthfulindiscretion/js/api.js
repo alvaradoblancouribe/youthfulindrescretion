@@ -1,0 +1,10 @@
+// all access driven through BASE. Must end with a SLASH
+// be sure you change to accommodate your specific API Gateway entry point
+var base_url = " https://lccdd1zx4e.execute-api.us-east-2.amazonaws.com/alpha/"; 
+
+var add_url    = base_url + "playlist";   // POST
+var listp_url   = base_url + "playlist";    // GET
+var listv_url   = base_url + "videosegment";    // GET
+var lists_url = base_url + "site"; //GET
+var register_url = base_url + "site"; //POST
+

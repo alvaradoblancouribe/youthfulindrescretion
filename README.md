@@ -1,2 +1,3 @@
-# youthfulindrescretion
-SoftEng Project
+# youthfulindiscretion
+Software Engineering Project
+Playlist Application
